@@ -6,7 +6,7 @@ public class TwoDogsMeet {
     Scanner input = new Scanner (System.in);
     dog dog1 = new dog("Bowser", "German Shepherd");
     dog dog2 = new dog ("Meow Meow", "Husky");
-    String choice;
+    String choice, choice2;
     //some data for the dogs
     System.out.println(dog1.getName() + ": ");
     System.out.println("Aggression: " + dog1.getAggression());
@@ -42,8 +42,8 @@ public class TwoDogsMeet {
     System.out.println("Would you like to change " + dog2.getName() + "'s aggression and hunger? \n"
             + "Enter YES to change \n"
             + "Enter NO to keep them");
-    choice = input.nextLine();
-    if(choice.equals("YES")){
+    choice2 = input.nextLine();
+    if(choice2.equals("YES")){
         System.out.println("Enter a value between 1 and 10 to set " + dog2.getName() + "'s aggression");
         dog2.setAggression (input.nextInt());
         System.out.println(dog2.getName() + "'s aggression set to " + dog2.getAggression());
